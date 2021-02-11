@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HW_PDD schema="altair_pdd" schemaVersion="hstp_v_5">
+  <!--
+    COPYRIGHT (c) 1999-2020 Altair Engineering, Inc. 
+    Email: hstsupport@altair.com
+    Phone: +1 (248) 614-2400
+    http://www.altair.com
+  -->
+  <DocumentProperties>
+    <FileDate>2020-12-17 22:14:25</FileDate>
+    <Revision>0.0</Revision>
+    <Author></Author>
+    <System>Windows [Version 6.2.9200] (64 bit)</System>
+    <CreatedBy>Altair HyperStudy(TM) v2020.1.0.26.1948507</CreatedBy>
+  </DocumentProperties>
+  <ConnectionList>
+    <Connection>
+      <ItemList>
+        <Item label="tf [mm]" name="tf" usage="input">
+          <State>true</State>
+          <Comment></Comment>
+          <ModelParameter>tf</ModelParameter>
+          <InitialValue> 1</InitialValue>
+          <LowerBound></LowerBound>
+          <UpperBound></UpperBound>
+          <DataType>Real</DataType>
+          <DataMode>Continuous</DataMode>
+          <LevelList></LevelList>
+          <ValueList>
+            <Value> 8.816379034801932</Value>
+          </ValueList>
+          <Unit>
+            <Type></Type>
+            <Name></Name>
+          </Unit>
+          <MetaDataList></MetaDataList>
+          <DerivativeOf></DerivativeOf>
+          <RespectTo></RespectTo>
+        </Item>
+        <Item label="tc [mm]" name="tc" usage="input">
+          <State>true</State>
+          <Comment></Comment>
+          <ModelParameter>tc</ModelParameter>
+          <InitialValue> 70</InitialValue>
+          <LowerBound></LowerBound>
+          <UpperBound></UpperBound>
+          <DataType>Real</DataType>
+          <DataMode>Continuous</DataMode>
+          <LevelList></LevelList>
+          <ValueList>
+            <Value> 20.712092842139636</Value>
+          </ValueList>
+          <Unit>
+            <Type></Type>
+            <Name></Name>
+          </Unit>
+          <MetaDataList></MetaDataList>
+          <DerivativeOf></DerivativeOf>
+          <RespectTo></RespectTo>
+        </Item>
+        <Item label="L [m]" name="L" usage="input">
+          <State>true</State>
+          <Comment></Comment>
+          <ModelParameter>L</ModelParameter>
+          <InitialValue> 4</InitialValue>
+          <LowerBound></LowerBound>
+          <UpperBound></UpperBound>
+          <DataType>Real</DataType>
+          <DataMode>Continuous</DataMode>
+          <LevelList></LevelList>
+          <ValueList>
+            <Value> 3.49815178293511</Value>
+          </ValueList>
+          <Unit>
+            <Type></Type>
+            <Name></Name>
+          </Unit>
+          <MetaDataList></MetaDataList>
+          <DerivativeOf></DerivativeOf>
+          <RespectTo></RespectTo>
+        </Item>
+        <Item label="Skin Material" name="skin_mat" usage="input">
+          <State>true</State>
+          <Comment></Comment>
+          <ModelParameter>skin_mat</ModelParameter>
+          <InitialValue>          Steel</InitialValue>
+          <LowerBound></LowerBound>
+          <UpperBound></UpperBound>
+          <DataType>String</DataType>
+          <DataMode>Discrete</DataMode>
+          <LevelList></LevelList>
+          <ValueList>
+            <Value>      Aluminium</Value>
+          </ValueList>
+          <Unit>
+            <Type></Type>
+            <Name></Name>
+          </Unit>
+          <MetaDataList></MetaDataList>
+          <DerivativeOf></DerivativeOf>
+          <RespectTo></RespectTo>
+        </Item>
+        <Item label="Core Material" name="core_mat" usage="input">
+          <State>true</State>
+          <Comment></Comment>
+          <ModelParameter>core_mat</ModelParameter>
+          <InitialValue>  DivinycellH60</InitialValue>
+          <LowerBound></LowerBound>
+          <UpperBound></UpperBound>
+          <DataType>String</DataType>
+          <DataMode>Discrete</DataMode>
+          <LevelList></LevelList>
+          <ValueList>
+            <Value> DivinycellH130</Value>
+          </ValueList>
+          <Unit>
+            <Type></Type>
+            <Name></Name>
+          </Unit>
+          <MetaDataList></MetaDataList>
+          <DerivativeOf></DerivativeOf>
+          <RespectTo></RespectTo>
+        </Item>
+      </ItemList>
+      <MetaDataList></MetaDataList>
+    </Connection>
+  </ConnectionList>
+</HW_PDD>

@@ -1,0 +1,5 @@
+        3.09290
+       95.93114
+        1.32767
+      Aluminium
+ DivinycellH100

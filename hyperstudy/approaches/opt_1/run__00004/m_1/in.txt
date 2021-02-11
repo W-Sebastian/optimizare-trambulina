@@ -1,0 +1,5 @@
+        8.02000
+      304.00000
+        1.60000
+      Aluminium
+ DivinycellH200

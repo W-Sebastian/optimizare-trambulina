@@ -1,0 +1,5 @@
+        0.10024
+      499.99138
+        1.06797
+      Aluminium
+  DivinycellH60

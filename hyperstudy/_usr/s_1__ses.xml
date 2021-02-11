@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HyperStudySession>
+  <!--
+    COPYRIGHT (c) 1999-2020 Altair Engineering, Inc. 
+    Email: hstsupport@altair.com
+    Phone: +1 (248) 614-2400
+    http://www.altair.com
+  -->
+  <DocumentProperties>
+    <FileDate>2021-02-11 13:14:46 </FileDate>
+    <Revision>0.0</Revision>
+    <Author></Author>
+    <System>Windows [Version 6.2.9200] (64 bit)</System>
+    <CreatedBy>Altair HyperStudy(TM) v2020.1.0.26.1948507</CreatedBy>
+  </DocumentProperties>
+  <Version>20.0</Version>
+  <BuildNumber>.100.0</BuildNumber>
+  <Revision>
+    <Major>20</Major>
+    <Minor>100</Minor>
+    <Build>26</Build>
+    <SubMinor>20200301</SubMinor>
+    <BuildId>1948507</BuildId>
+  </Revision>
+  <StudySettings>
+    <Setting name="/s_1/opt_1-def/model_data/RowSelection1" type="string">0 1 2 3 4 5 6 7 8 9 </Setting>
+    <Setting name="/s_1/opt_1/data_integrity/RowSelection1" type="string">0 </Setting>
+    <Setting name="/s_1/opt_1/data_summary/RowSelection1" type="string">0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 </Setting>
+    <Setting name="/s_1/opt_1/distribution/RowSelection1" type="string">11 </Setting>
+    <Setting name="/s_1/opt_1/evaluation_data/RowSelection1" type="string">0 1 2 3 4 5 6 7 8 </Setting>
+    <Setting name="/s_1/opt_1/evaluation_plot/RowSelection1" type="string">3 </Setting>
+    <Setting name="/s_1/opt_1/evaluation_scatter/RowSelection1" type="string">9 </Setting>
+    <Setting name="/s_1/opt_1/evaluation_scatter/RowSelection2" type="string">13 </Setting>
+    <Setting name="/s_1/opt_1/evaluation_scatter/RowSelection3" type="string"></Setting>
+    <Setting name="/s_1/opt_1/evaluation_scatter/RowSelection4" type="string"></Setting>
+    <Setting name="/s_1/opt_1/evaluation_time/RowSelection1" type="string">0 </Setting>
+    <Setting name="/s_1/opt_1/evaluation_time/RowSelection2" type="string">0 </Setting>
+    <Setting name="/s_1/opt_1/iteration_data/RowSelection1" type="string">0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 </Setting>
+    <Setting name="/s_1/opt_1/iteration_plot_2d/RowSelection1" type="string">2 </Setting>
+    <Setting name="/s_1/opt_1/optima/RowSelection1" type="string">15 </Setting>
+    <Setting name="/s_1/opt_1/optima/RowSelection2" type="string">5 </Setting>
+    <Setting name="/s_1/opt_1/optima/RowSelection3" type="string">11 </Setting>
+    <Setting name="/s_1/opt_1/optima/RowSelection4" type="string">13 </Setting>
+    <Setting name="/s_1/opt_1/parallel_coordinate/RowSelection1" type="string">0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 </Setting>
+    <Setting name="/s_1/opt_1/scatter_2d/RowSelection1" type="string">13 </Setting>
+    <Setting name="/s_1/opt_1/scatter_2d/RowSelection2" type="string">15 </Setting>
+    <Setting name="/s_1/opt_1/scatter_2d/RowSelection3" type="string"></Setting>
+    <Setting name="/s_1/opt_1/scatter_2d/RowSelection4" type="string"></Setting>
+    <Setting name="/s_1/opt_2/data_integrity/RowSelection1" type="string">0 </Setting>
+    <Setting name="/s_1/opt_2/data_summary/RowSelection1" type="string">0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 </Setting>
+    <Setting name="/s_1/opt_2/evaluation_plot/RowSelection1" type="string">0 </Setting>
+    <Setting name="/s_1/opt_2/evaluation_scatter/RowSelection1" type="string">2 </Setting>
+    <Setting name="/s_1/opt_2/evaluation_scatter/RowSelection2" type="string">9 </Setting>
+    <Setting name="/s_1/opt_2/evaluation_scatter/RowSelection3" type="string"></Setting>
+    <Setting name="/s_1/opt_2/evaluation_scatter/RowSelection4" type="string"></Setting>
+    <Setting name="/s_1/opt_2/optima/RowSelection1" type="string">8 </Setting>
+    <Setting name="/s_1/opt_2/optima/RowSelection2" type="string">9 </Setting>
+    <Setting name="/s_1/opt_2/optima/RowSelection3" type="string"></Setting>
+    <Setting name="/s_1/opt_2/optima/RowSelection4" type="string"></Setting>
+    <Setting name="/s_1/opt_2/scatter_2d/RowSelection1" type="string">0 </Setting>
+    <Setting name="/s_1/opt_2/scatter_2d/RowSelection2" type="string">1 </Setting>
+    <Setting name="/s_1/opt_2/scatter_2d/RowSelection3" type="string"></Setting>
+    <Setting name="/s_1/opt_2/scatter_2d/RowSelection4" type="string"></Setting>
+    <Setting name="/s_1/setup_1-def/model_data/RowSelection1" type="string">0 1 2 3 4 </Setting>
+    <Setting name="CurrentApproach" type="string">opt_2</Setting>
+    <Setting name="CurrentStepEnum" type="string">8</Setting>
+    <Setting name="CurrentStepVarname" type="string">post_processing</Setting>
+    <Setting name="ExpandStates" type="string">01111110</Setting>
+    <Setting name="HstFloatFormModelResources_FilterDV" type="bool">true</Setting>
+    <Setting name="HstFloatFormModelResources_FilterDataSrc" type="bool">true</Setting>
+    <Setting name="HstFloatFormModelResources_FilterInputRes" type="bool">true</Setting>
+    <Setting name="HstFloatFormModelResources_FilterLinkRes" type="bool">true</Setting>
+    <Setting name="HstFloatFormModelResources_FilterOutputRes" type="bool">true</Setting>
+    <Setting name="HstFloatFormModelResources_FilterResponse" type="bool">true</Setting>
+    <Setting name="HstFloatFormModelResources_LODSlider" type="int">6</Setting>
+    <Setting name="Left_HstModelResourceView/BrowserStates" type="string">011</Setting>
+    <Setting name="Right_HstModelResourceView/BrowserStates" type="string">011</Setting>
+    <Setting name="define_design_variabless_1opt_1CurrentTabIndex" type="string">0</Setting>
+    <Setting name="define_design_variabless_1opt_1CurrentTabName" type="string">define_design_variables_default</Setting>
+    <Setting name="define_design_variabless_1opt_2CurrentTabIndex" type="string">0</Setting>
+    <Setting name="define_design_variabless_1opt_2CurrentTabName" type="string">define_design_variables_default</Setting>
+    <Setting name="define_design_variabless_1setup_1CurrentTabIndex" type="string">0</Setting>
+    <Setting name="define_design_variabless_1setup_1CurrentTabName" type="string">define_design_variables_default</Setting>
+    <Setting name="define_modelss_1opt_1CurrentTabIndex" type="string">0</Setting>
+    <Setting name="define_modelss_1opt_1CurrentTabName" type="string">define_models</Setting>
+    <Setting name="define_modelss_1setup_1CurrentTabIndex" type="string">0</Setting>
+    <Setting name="define_modelss_1setup_1CurrentTabName" type="string">define_models</Setting>
+    <Setting name="define_responsess_1opt_1CurrentTabIndex" type="string">0</Setting>
+    <Setting name="define_responsess_1opt_1CurrentTabName" type="string">define_responses</Setting>
+    <Setting name="define_responsess_1opt_2CurrentTabIndex" type="string">0</Setting>
+    <Setting name="define_responsess_1opt_2CurrentTabName" type="string">define_responses</Setting>
+    <Setting name="define_responsess_1setup_1CurrentTabIndex" type="string">0</Setting>
+    <Setting name="define_responsess_1setup_1CurrentTabName" type="string">define_responses</Setting>
+    <Setting name="definitions_1opt_1CurrentTabIndex" type="string">0</Setting>
+    <Setting name="definitions_1opt_1CurrentTabName" type="string">definition_status</Setting>
+    <Setting name="definitions_1setup_1CurrentTabIndex" type="string">0</Setting>
+    <Setting name="definitions_1setup_1CurrentTabName" type="string">definition_status</Setting>
+    <Setting name="evaluates_1opt_1CurrentTabIndex" type="string">0</Setting>
+    <Setting name="evaluates_1opt_1CurrentTabName" type="string">evaluation_task</Setting>
+    <Setting name="evaluates_1opt_2CurrentTabIndex" type="string">3</Setting>
+    <Setting name="evaluates_1opt_2CurrentTabName" type="string">evaluation_scatter</Setting>
+    <Setting name="opt_1s_1opt_1CurrentTabIndex" type="string">0</Setting>
+    <Setting name="opt_1s_1opt_1CurrentTabName" type="string">approach_details</Setting>
+    <Setting name="opt_2s_1opt_2CurrentTabIndex" type="string">0</Setting>
+    <Setting name="opt_2s_1opt_2CurrentTabName" type="string">approach_details</Setting>
+    <Setting name="post_processings_1opt_1CurrentTabIndex" type="string">1</Setting>
+    <Setting name="post_processings_1opt_1CurrentTabName" type="string">data_summary</Setting>
+    <Setting name="post_processings_1opt_2CurrentTabIndex" type="string">6</Setting>
+    <Setting name="post_processings_1opt_2CurrentTabName" type="string">optima</Setting>
+    <Setting name="reports_1opt_1CurrentTabIndex" type="string">0</Setting>
+    <Setting name="reports_1opt_1CurrentTabName" type="string">report</Setting>
+    <Setting name="reports_1opt_2CurrentTabIndex" type="string">0</Setting>
+    <Setting name="reports_1opt_2CurrentTabName" type="string">report</Setting>
+    <Setting name="s_1s_1CurrentTabIndex" type="string">0</Setting>
+    <Setting name="s_1s_1CurrentTabName" type="string">study_details</Setting>
+    <Setting name="setup_1s_1setup_1CurrentTabIndex" type="string">0</Setting>
+    <Setting name="setup_1s_1setup_1CurrentTabName" type="string">approach_details</Setting>
+    <Setting name="specificationss_1opt_1CurrentTabIndex" type="string">0</Setting>
+    <Setting name="specificationss_1opt_1CurrentTabName" type="string">specifications</Setting>
+    <Setting name="specificationss_1opt_2CurrentTabIndex" type="string">0</Setting>
+    <Setting name="specificationss_1opt_2CurrentTabName" type="string">specifications</Setting>
+    <Setting name="test_modelss_1opt_1-defCurrentTabIndex" type="string">0</Setting>
+    <Setting name="test_modelss_1opt_1-defCurrentTabName" type="string">test_models</Setting>
+    <Setting name="test_modelss_1opt_2-defCurrentTabIndex" type="string">0</Setting>
+    <Setting name="test_modelss_1opt_2-defCurrentTabName" type="string">test_models</Setting>
+    <Setting name="test_modelss_1setup_1-defCurrentTabIndex" type="string">0</Setting>
+    <Setting name="test_modelss_1setup_1-defCurrentTabName" type="string">test_models</Setting>
+  </StudySettings>
+</HyperStudySession>

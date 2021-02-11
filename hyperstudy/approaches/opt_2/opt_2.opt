@@ -1,0 +1,85 @@
+@HyperStudy
+###
+### Authored   by: ( HyperStudy (hst) )
+###
+### Date    saved: ( 2020-12-17 22:07:54        (Thu) )
+###
+### Library   rev: ( v2020-02-24_08:50:01 - 200:alm_1:stm_1:utc_0 )
+###
+################################################################################
+###
+### 
+### 
+### Inputs: 5
+### 
+### Varname = tf
+##DESVAR, 1,  1.00000000000000000,  0.10000000000000000,  10.0000000000000000
+### 
+### Varname = tc
+##DESVAR, 2,  70.0000000000000000,  10.0000000000000000,  500.000000000000000
+### 
+### Varname = L
+##DESVAR, 3,  4.00000000000000000,  1.00000000000000000,  4.00000000000000000
+### 
+### Varname = skin_mat
+##DISCRETE, 4,  0.00000000000000000
+##+, 1.00000000000000000
+##+, 2.00000000000000000
+##+, 3.00000000000000000
+### 
+### Varname = core_mat
+##DISCRETE, 5,  0.00000000000000000
+##+, 1.00000000000000000
+##+, 2.00000000000000000
+##+, 3.00000000000000000
+### 
+### 
+### 
+### Objectives: 2
+### 
+### Varname = goal_7
+##OBJFUN, USER, 5, 0, 0, 0, 0
+### 
+### Varname = goal_8
+##OBJFUN, USER, 6, 0, 0, 0, 0
+### 
+### 
+### 
+### Constraints: 4
+### 
+### Varname = goal_2
+##LBCON, USER, 1, 0, 0, 0,  0.00000000000000000
+### 
+### Varname = goal_3
+##LBCON, USER, 2, 0, 0, 0,  0.00000000000000000
+### 
+### Varname = goal_4
+##LBCON, USER, 3, 0, 0, 0,  0.00000000000000000
+### 
+### Varname = goal_6
+##UBCON, USER, 4, 0, 0, 0,  200.000000000000000
+### 
+### 
+### 
+### Optimization engine specific parameters: 13
+### 
+##PARAM, MAXDES, 4000
+##PARAM, NPTGRS, 7
+##PARAM, GAREPT, 1
+##PARAM, PARALLE, 2
+##PARAM, IGFAIL, 1
+##PARAM, MAXFAIL, 20000
+##PARAM, STOPOPT, 1000
+##PARAM, ENHEFF, 0
+##PARAM, INCLUSI, 0
+##PARAM, GMAX,  0.50000000000000000
+##PARAM, TZERO,  0.00500000000000000
+##PARAM, CENF, 0
+##PARAM, VALIDAT, 0
+### 
+### GRSM - Global Response Surface Method
+###
+##PARAM, OPTYPE, 9
+###
+################################################################################
+### End .opt 

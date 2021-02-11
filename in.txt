@@ -1,0 +1,5 @@
+0.01000
+0.09000
+3.50000
+Aluminium
+DivinycellH100

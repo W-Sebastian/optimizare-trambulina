@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HyperStudy>
+  <!--
+    COPYRIGHT (c) 1999-2020 Altair Engineering, Inc. 
+    Email: hstsupport@altair.com
+    Phone: +1 (248) 614-2400
+    http://www.altair.com
+  -->
+  <DocumentProperties>
+    <FileDate>2020-12-17 22:01:11 </FileDate>
+    <Revision>0.0</Revision>
+    <Author></Author>
+    <System>Windows [Version 6.2.9200] (64 bit)</System>
+    <CreatedBy>Altair HyperStudy(TM) v2020.1.0.26.1948507</CreatedBy>
+  </DocumentProperties>
+  <Version>20.0</Version>
+  <BuildNumber>.100.0</BuildNumber>
+  <Revision>
+    <Major>20</Major>
+    <Minor>100</Minor>
+    <Build>26</Build>
+    <SubMinor>20200301</SubMinor>
+    <BuildId>1948507</BuildId>
+  </Revision>
+  <Updated></Updated>
+  <Study varname="s_1">
+    <Label>Study_1</Label>
+    <TimeCreated>1608221455</TimeCreated>
+    <Comment></Comment>
+    <Folder></Folder>
+    <ApproachList>
+      <Approach varname="setup_1" type="HstApproach_Nom">
+        <Label>Setup</Label>
+        <TimeCreated>1608221455</TimeCreated>
+        <Comment></Comment>
+        <Definition>
+          <ModelList>
+            <Model varname="m_1" type="HstModelRef_TPL">
+              <Label>Parameterized File 1</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Priority>0</Priority>
+              <RunScript>scr_15</RunScript>
+              <Argument>E:\Work\StructuriUsoare\Trambulina\Trambulina\hyperstudy.py ${file}</Argument>
+              <Solver></Solver>
+              <AnalysisTask></AnalysisTask>
+              <SchemaVersionHstp>hstp_v_5</SchemaVersionHstp>
+              <Resources>
+                <Resource varname="m_1.file_1" type="Input">
+                  <Label>input_file.tpl</Label>
+                  <Comment></Comment>
+                  <Role>file</Role>
+                  <InVault>false</InVault>
+                  <PathOrigin>file:///E:/Work/StructuriUsoare/Trambulina/Trambulina/input_file.tpl</PathOrigin>
+                  <PathLocal>run-file:///m_1/in.txt</PathLocal>
+                  <Operation>WriteInput</Operation>
+                  <Format></Format>
+                </Resource>
+                <Resource varname="m_1.file_2" type="Output">
+                  <Label>out.txt</Label>
+                  <Comment></Comment>
+                  <Role>file</Role>
+                  <InVault>false</InVault>
+                  <PathOrigin>run-file:///m_1/out.txt</PathOrigin>
+                  <PathLocal>run-file:///m_1/out.txt</PathLocal>
+                  <Operation>None</Operation>
+                  <Format></Format>
+                </Resource>
+                <Resource varname="m_1.file_3" type="Input">
+                  <Label>in.txt</Label>
+                  <Comment></Comment>
+                  <Role>file</Role>
+                  <InVault>false</InVault>
+                  <PathOrigin>study-file:///approaches/setup_1-def/run__00001/m_1/in.txt</PathOrigin>
+                  <PathLocal>run-file:///m_1/in.txt</PathLocal>
+                  <Operation>None</Operation>
+                  <Format></Format>
+                </Resource>
+              </Resources>
+              <MetaDataList></MetaDataList>
+            </Model>
+          </ModelList>
+          <DataSourceList>
+            <DataSource varname="ds_1">
+              <Label>Data Source 1</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Source>run-file:///m_1/out.txt</Source>
+              <Type>Real</Type>
+              <DataSourceTool type="ReadSim">
+                <Subcase></Subcase>
+                <Type>Column 1</Type>
+                <StartRequest>Index</StartRequest>
+                <EndRequest>Index</EndRequest>
+                <ComponentList>
+                  <ListValue>Column 1</ListValue>
+                </ComponentList>
+                <StartTimeStep>0</StartTimeStep>
+                <StartTimeStepState>false</StartTimeStepState>
+                <EndTimeStep>0</EndTimeStep>
+                <EndTimeStepState>false</EndTimeStepState>
+                <Reader></Reader>
+                <ReaderVersion></ReaderVersion>
+                <ReaderVersionSupport>false</ReaderVersionSupport>
+              </DataSourceTool>
+            </DataSource>
+          </DataSourceList>
+          <GradientList></GradientList>
+          <DesignVariableList>
+            <DesignVariable varname="tf">
+              <Label>tf [mm]</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name>tf</Name>
+                <ModelVarname>m_1</ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Category>Controlled</Category>
+              <Role>Design</Role>
+              <Link></Link>
+              <FixedVariable>
+                <Type>Real</Type>
+                <Mode>Continuous</Mode>
+                <Levels></Levels>
+                <LowerBound type="double"> 0.1</LowerBound>
+                <NominalValue type="double"> 1</NominalValue>
+                <UpperBound type="double"> 10</UpperBound>
+              </FixedVariable>
+              <RandomVariable>
+                <StatisticalDistribution>Normal_Variance</StatisticalDistribution>
+                <Param_Alpha> 1</Param_Alpha>
+                <Param_Beta> 6.125625</Param_Beta>
+                <Param_Gamma></Param_Gamma>
+              </RandomVariable>
+            </DesignVariable>
+            <DesignVariable varname="tc">
+              <Label>tc [mm]</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name>tc</Name>
+                <ModelVarname>m_1</ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Category>Controlled</Category>
+              <Role>Design</Role>
+              <Link></Link>
+              <FixedVariable>
+                <Type>Real</Type>
+                <Mode>Continuous</Mode>
+                <Levels></Levels>
+                <LowerBound type="double"> 10</LowerBound>
+                <NominalValue type="double"> 70</NominalValue>
+                <UpperBound type="double"> 500</UpperBound>
+              </FixedVariable>
+              <RandomVariable>
+                <StatisticalDistribution>Normal_Variance</StatisticalDistribution>
+                <Param_Alpha> 70</Param_Alpha>
+                <Param_Beta> 15006.25</Param_Beta>
+                <Param_Gamma></Param_Gamma>
+              </RandomVariable>
+            </DesignVariable>
+            <DesignVariable varname="L">
+              <Label>L [m]</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name>L</Name>
+                <ModelVarname>m_1</ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Category>Controlled</Category>
+              <Role>Design</Role>
+              <Link></Link>
+              <FixedVariable>
+                <Type>Real</Type>
+                <Mode>Continuous</Mode>
+                <Levels></Levels>
+                <LowerBound type="double"> 1</LowerBound>
+                <NominalValue type="double"> 4</NominalValue>
+                <UpperBound type="double"> 4</UpperBound>
+              </FixedVariable>
+              <RandomVariable>
+                <StatisticalDistribution>Normal_Variance</StatisticalDistribution>
+                <Param_Alpha> 4</Param_Alpha>
+                <Param_Beta> 0.5625</Param_Beta>
+                <Param_Gamma></Param_Gamma>
+              </RandomVariable>
+            </DesignVariable>
+            <DesignVariable varname="skin_mat">
+              <Label>Skin Material</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name>skin_mat</Name>
+                <ModelVarname>m_1</ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Category>Controlled</Category>
+              <Role>Design</Role>
+              <Link></Link>
+              <FixedVariable>
+                <Type>String</Type>
+                <Mode>Discrete</Mode>
+                <Levels>"          Steel","      Aluminium","           GFRP","           CFRP"</Levels>
+                <LowerBound type="string">          Steel</LowerBound>
+                <NominalValue type="string">          Steel</NominalValue>
+                <UpperBound type="string">           CFRP</UpperBound>
+              </FixedVariable>
+              <RandomVariable>
+                <StatisticalDistribution>Uniform Discrete</StatisticalDistribution>
+                <Param_Alpha></Param_Alpha>
+                <Param_Beta></Param_Beta>
+                <Param_Gamma></Param_Gamma>
+              </RandomVariable>
+            </DesignVariable>
+            <DesignVariable varname="core_mat">
+              <Label>Core Material</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name>core_mat</Name>
+                <ModelVarname>m_1</ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Category>Controlled</Category>
+              <Role>Design</Role>
+              <Link></Link>
+              <FixedVariable>
+                <Type>String</Type>
+                <Mode>Discrete</Mode>
+                <Levels>"  DivinycellH60"," DivinycellH100"," DivinycellH130"," DivinycellH200"</Levels>
+                <LowerBound type="string">  DivinycellH60</LowerBound>
+                <NominalValue type="string">  DivinycellH60</NominalValue>
+                <UpperBound type="string"> DivinycellH200</UpperBound>
+              </FixedVariable>
+              <RandomVariable>
+                <StatisticalDistribution>Uniform Discrete</StatisticalDistribution>
+                <Param_Alpha></Param_Alpha>
+                <Param_Beta></Param_Beta>
+                <Param_Gamma></Param_Gamma>
+              </RandomVariable>
+            </DesignVariable>
+          </DesignVariableList>
+          <ResponseList>
+            <Response varname="r_1">
+              <Label>Delta Displacement</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name></Name>
+                <ModelVarname></ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Type>Real</Type>
+              <Expression>ds_1[1] - ds_1[0]</Expression>
+              <Evaluate>$SOLVER</Evaluate>
+            </Response>
+            <Response varname="r_2">
+              <Label>Delta Tau_c</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name></Name>
+                <ModelVarname></ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Type>Real</Type>
+              <Expression>ds_1[3] - ds_1[2]</Expression>
+              <Evaluate>$SOLVER</Evaluate>
+            </Response>
+            <Response varname="r_3">
+              <Label>Delta Sigma_f</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name></Name>
+                <ModelVarname></ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Type>Real</Type>
+              <Expression>ds_1[5] - ds_1[4]</Expression>
+              <Evaluate>$SOLVER</Evaluate>
+            </Response>
+            <Response varname="r_4">
+              <Label>Cost</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name></Name>
+                <ModelVarname></ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Type>Real</Type>
+              <Expression>ds_1[6]</Expression>
+              <Evaluate>$SOLVER</Evaluate>
+            </Response>
+            <Response varname="r_5">
+              <Label>Mass</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name></Name>
+                <ModelVarname></ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Type>Real</Type>
+              <Expression>ds_1[7]</Expression>
+              <Evaluate>$SOLVER</Evaluate>
+            </Response>
+          </ResponseList>
+          <GoalList>
+            <ConstraintBoundaries>Standard</ConstraintBoundaries>
+            <PercentTolerance> 0.5</PercentTolerance>
+            <ToleranceAtZero> 0.005</ToleranceAtZero>
+            <Goal varname="goal_2">
+              <Label>Goal 2</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Response>r_3</Response>
+              <Type>Constraint</Type>
+              <BoundType>&gt;=</BoundType>
+              <BoundValue> 0</BoundValue>
+              <TypeSpecificValue> 0</TypeSpecificValue>
+            </Goal>
+            <Goal varname="goal_3">
+              <Label>Goal 3</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Response>r_1</Response>
+              <Type>Constraint</Type>
+              <BoundType>&gt;=</BoundType>
+              <BoundValue> 0</BoundValue>
+              <TypeSpecificValue> 0</TypeSpecificValue>
+            </Goal>
+            <Goal varname="goal_4">
+              <Label>Goal 4</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Response>r_2</Response>
+              <Type>Constraint</Type>
+              <BoundType>&gt;=</BoundType>
+              <BoundValue> 0</BoundValue>
+              <TypeSpecificValue> 0</TypeSpecificValue>
+            </Goal>
+            <Goal varname="goal_5">
+              <Label>Goal 5</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Response></Response>
+              <Type>Constraint</Type>
+              <BoundType>&gt;=</BoundType>
+              <BoundValue> 0</BoundValue>
+              <TypeSpecificValue> 0</TypeSpecificValue>
+            </Goal>
+            <Goal varname="goal_6">
+              <Label>Goal 6</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Response>r_4</Response>
+              <Type>Minimize</Type>
+              <BoundType>&gt;=</BoundType>
+              <BoundValue> 0</BoundValue>
+              <TypeSpecificValue> 0</TypeSpecificValue>
+            </Goal>
+            <Goal varname="goal_7">
+              <Label>Goal 6</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Response>r_1</Response>
+              <Type>Minimize</Type>
+              <BoundType>&gt;=</BoundType>
+              <BoundValue> 0</BoundValue>
+              <TypeSpecificValue> 0</TypeSpecificValue>
+            </Goal>
+            <Goal varname="goal_8">
+              <Label>Goal 7</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Response>r_5</Response>
+              <Type>Minimize</Type>
+              <BoundType>&gt;=</BoundType>
+              <BoundValue> 0</BoundValue>
+              <TypeSpecificValue> 0</TypeSpecificValue>
+            </Goal>
+          </GoalList>
+          <VariableConstraintList></VariableConstraintList>
+        </Definition>
+        <MatrixList></MatrixList>
+        <MatrixFilterList>
+          <MatrixFilter varname="hstfilter_outliers">
+            <State>false</State>
+          </MatrixFilter>
+          <MatrixFilter varname="hstfilter_duplicates">
+            <State>false</State>
+          </MatrixFilter>
+          <MatrixFilter varname="hstfilter_bad_numbers">
+            <State>true</State>
+          </MatrixFilter>
+          <MatrixFilter varname="hstfilter_excluded">
+            <State>false</State>
+          </MatrixFilter>
+          <MatrixFilter varname="hstfilter_testing_conflict">
+            <State>false</State>
+          </MatrixFilter>
+        </MatrixFilterList>
+        <EvaluationParameterList>
+          <EvaluationParameter varname="Horizontal">
+            <State>true</State>
+            <Value type="boolean">true</Value>
+          </EvaluationParameter>
+          <EvaluationParameter varname="WriteFirst">
+            <State>true</State>
+            <Value type="boolean">false</Value>
+          </EvaluationParameter>
+          <EvaluationParameter varname="MultiRunCount">
+            <State>true</State>
+            <Value type="integer">2</Value>
+          </EvaluationParameter>
+          <EvaluationParameter varname="ShowExternalOutput">
+            <State>true</State>
+            <Value type="boolean">false</Value>
+          </EvaluationParameter>
+          <EvaluationParameter varname="MultiRunExecDelay">
+            <State>true</State>
+            <Value type="integer">250</Value>
+          </EvaluationParameter>
+          <EvaluationParameter varname="PreloadThreshold">
+            <State>true</State>
+            <Value type="integer">1048576</Value>
+          </EvaluationParameter>
+          <EvaluationParameter varname="TaskTimeOut">
+            <State>false</State>
+            <Value type="integer">2592000</Value>
+          </EvaluationParameter>
+        </EvaluationParameterList>
+        <CommandList>
+          <Command varname="cmd_create_design">
+            <StateUI>true</StateUI>
+            <StateBatch>true</StateBatch>
+            <ArgumentList></ArgumentList>
+          </Command>
+          <Command varname="cmd_write_input_deck">
+            <StateUI>true</StateUI>
+            <StateBatch>true</StateBatch>
+            <ArgumentList></ArgumentList>
+          </Command>
+          <Command varname="cmd_exec_analysis">
+            <StateUI>true</StateUI>
+            <StateBatch>true</StateBatch>
+            <ArgumentList></ArgumentList>
+          </Command>
+          <Command varname="cmd_extract_response">
+            <StateUI>true</StateUI>
+            <StateBatch>true</StateBatch>
+            <ArgumentList></ArgumentList>
+          </Command>
+          <Command varname="cmd_purge">
+            <StateUI>true</StateUI>
+            <StateBatch>true</StateBatch>
+            <ArgumentList>
+              <Argument varname="filenames">
+                <Value></Value>
+              </Argument>
+              <Argument varname="foldernames">
+                <Value></Value>
+              </Argument>
+              <Argument varname="onlyOnSuccess">
+                <Value>true</Value>
+              </Argument>
+            </ArgumentList>
+          </Command>
+          <Command varname="cmd_create_report">
+            <StateUI>true</StateUI>
+            <StateBatch>true</StateBatch>
+            <ArgumentList></ArgumentList>
+          </Command>
+        </CommandList>
+      </Approach>
+      <Approach varname="opt_1" type="HstApproach_Opt">
+        <Label>Optimization 1</Label>
+        <TimeCreated>1608231872</TimeCreated>
+        <Comment></Comment>
+        <Definition>
+          <ModelList>
+            <Model varname="m_1" type="HstModelRef_TPL">
+              <Label>Parameterized File 1</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Priority>0</Priority>
+              <RunScript>scr_15</RunScript>
+              <Argument>E:\Work\StructuriUsoare\Trambulina\Trambulina\hyperstudy.py ${file}</Argument>
+              <Solver></Solver>
+              <AnalysisTask></AnalysisTask>
+              <SchemaVersionHstp>hstp_v_5</SchemaVersionHstp>
+              <Resources>
+                <Resource varname="m_1.file_1" type="Input">
+                  <Label>input_file.tpl</Label>
+                  <Comment></Comment>
+                  <Role>file</Role>
+                  <InVault>false</InVault>
+                  <PathOrigin>file:///E:/Work/StructuriUsoare/Trambulina/Trambulina/input_file.tpl</PathOrigin>
+                  <PathLocal>run-file:///m_1/in.txt</PathLocal>
+                  <Operation>WriteInput</Operation>
+                  <Format></Format>
+                </Resource>
+                <Resource varname="m_1.file_2" type="Output">
+                  <Label>out.txt</Label>
+                  <Comment></Comment>
+                  <Role>file</Role>
+                  <InVault>false</InVault>
+                  <PathOrigin>run-file:///m_1/out.txt</PathOrigin>
+                  <PathLocal>run-file:///m_1/out.txt</PathLocal>
+                  <Operation>None</Operation>
+                  <Format></Format>
+                </Resource>
+                <Resource varname="m_1.file_3" type="Input">
+                  <Label>in.txt</Label>
+                  <Comment></Comment>
+                  <Role>file</Role>
+                  <InVault>false</InVault>
+                  <PathOrigin>study-file:///approaches/setup_1-def/run__00001/m_1/in.txt</PathOrigin>
+                  <PathLocal>run-file:///m_1/in.txt</PathLocal>
+                  <Operation>None</Operation>
+                  <Format></Format>
+                </Resource>
+              </Resources>
+              <MetaDataList></MetaDataList>
+            </Model>
+          </ModelList>
+          <DataSourceList>
+            <DataSource varname="ds_1">
+              <Label>Data Source 1</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Source>run-file:///m_1/out.txt</Source>
+              <Type>Real</Type>
+              <DataSourceTool type="FileSource">
+                <Subcase></Subcase>
+                <Type>Unknown</Type>
+                <Request>Block 1</Request>
+                <Component>Column 1</Component>
+                <Reader></Reader>
+                <ReaderVersion></ReaderVersion>
+                <ReaderVersionSupport>false</ReaderVersionSupport>
+              </DataSourceTool>
+            </DataSource>
+          </DataSourceList>
+          <GradientList></GradientList>
+          <DesignVariableList>
+            <DesignVariable varname="tf">
+              <Label>tf [mm]</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name>tf</Name>
+                <ModelVarname>m_1</ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Category>Controlled</Category>
+              <Role>Design</Role>
+              <Link></Link>
+              <FixedVariable>
+                <Type>Real</Type>
+                <Mode>Continuous</Mode>
+                <Levels></Levels>
+                <LowerBound type="double"> 0.1</LowerBound>
+                <NominalValue type="double"> 1</NominalValue>
+                <UpperBound type="double"> 10</UpperBound>
+              </FixedVariable>
+              <RandomVariable>
+                <StatisticalDistribution>Normal_Variance</StatisticalDistribution>
+                <Param_Alpha> 1</Param_Alpha>
+                <Param_Beta> 6.125625</Param_Beta>
+                <Param_Gamma></Param_Gamma>
+              </RandomVariable>
+            </DesignVariable>
+            <DesignVariable varname="tc">
+              <Label>tc [mm]</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name>tc</Name>
+                <ModelVarname>m_1</ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Category>Controlled</Category>
+              <Role>Design</Role>
+              <Link></Link>
+              <FixedVariable>
+                <Type>Real</Type>
+                <Mode>Continuous</Mode>
+                <Levels></Levels>
+                <LowerBound type="double"> 10</LowerBound>
+                <NominalValue type="double"> 70</NominalValue>
+                <UpperBound type="double"> 500</UpperBound>
+              </FixedVariable>
+              <RandomVariable>
+                <StatisticalDistribution>Normal_Variance</StatisticalDistribution>
+                <Param_Alpha> 70</Param_Alpha>
+                <Param_Beta> 15006.25</Param_Beta>
+                <Param_Gamma></Param_Gamma>
+              </RandomVariable>
+            </DesignVariable>
+            <DesignVariable varname="L">
+              <Label>L [m]</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name>L</Name>
+                <ModelVarname>m_1</ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Category>Controlled</Category>
+              <Role>Design</Role>
+              <Link></Link>
+              <FixedVariable>
+                <Type>Real</Type>
+                <Mode>Continuous</Mode>
+                <Levels></Levels>
+                <LowerBound type="double"> 1</LowerBound>
+                <NominalValue type="double"> 4</NominalValue>
+                <UpperBound type="double"> 4</UpperBound>
+              </FixedVariable>
+              <RandomVariable>
+                <StatisticalDistribution>Normal_Variance</StatisticalDistribution>
+                <Param_Alpha> 4</Param_Alpha>
+                <Param_Beta> 0.5625</Param_Beta>
+                <Param_Gamma></Param_Gamma>
+              </RandomVariable>
+            </DesignVariable>
+            <DesignVariable varname="skin_mat">
+              <Label>Skin Material</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name>skin_mat</Name>
+                <ModelVarname>m_1</ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Category>Controlled</Category>
+              <Role>Design</Role>
+              <Link></Link>
+              <FixedVariable>
+                <Type>String</Type>
+                <Mode>Discrete</Mode>
+                <Levels>"          Steel","      Aluminium","           GFRP","           CFRP"</Levels>
+                <LowerBound type="string">          Steel</LowerBound>
+                <NominalValue type="string">          Steel</NominalValue>
+                <UpperBound type="string">           CFRP</UpperBound>
+              </FixedVariable>
+              <RandomVariable>
+                <StatisticalDistribution>Uniform Discrete</StatisticalDistribution>
+                <Param_Alpha></Param_Alpha>
+                <Param_Beta></Param_Beta>
+                <Param_Gamma></Param_Gamma>
+              </RandomVariable>
+            </DesignVariable>
+            <DesignVariable varname="core_mat">
+              <Label>Core Material</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name>core_mat</Name>
+                <ModelVarname>m_1</ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Category>Controlled</Category>
+              <Role>Design</Role>
+              <Link></Link>
+              <FixedVariable>
+                <Type>String</Type>
+                <Mode>Discrete</Mode>
+                <Levels>"  DivinycellH60"," DivinycellH100"," DivinycellH130"," DivinycellH200"</Levels>
+                <LowerBound type="string">  DivinycellH60</LowerBound>
+                <NominalValue type="string">  DivinycellH60</NominalValue>
+                <UpperBound type="string"> DivinycellH200</UpperBound>
+              </FixedVariable>
+              <RandomVariable>
+                <StatisticalDistribution>Uniform Discrete</StatisticalDistribution>
+                <Param_Alpha></Param_Alpha>
+                <Param_Beta></Param_Beta>
+                <Param_Gamma></Param_Gamma>
+              </RandomVariable>
+            </DesignVariable>
+          </DesignVariableList>
+          <ResponseList>
+            <Response varname="r_1">
+              <Label>Delta Displacement</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name></Name>
+                <ModelVarname></ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Type>Real</Type>
+              <Expression>ds_1[1] - ds_1[0]</Expression>
+              <Evaluate>$SOLVER</Evaluate>
+            </Response>
+            <Response varname="r_2">
+              <Label>Delta Tau_c</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name></Name>
+                <ModelVarname></ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Type>Real</Type>
+              <Expression>ds_1[3] - ds_1[2]</Expression>
+              <Evaluate>$SOLVER</Evaluate>
+            </Response>
+            <Response varname="r_3">
+              <Label>Delta Sigma_f</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name></Name>
+                <ModelVarname></ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Type>Real</Type>
+              <Expression>ds_1[5] - ds_1[4]</Expression>
+              <Evaluate>$SOLVER</Evaluate>
+            </Response>
+            <Response varname="r_4">
+              <Label>Cost</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name></Name>
+                <ModelVarname></ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Type>Real</Type>
+              <Expression>ds_1[6]</Expression>
+              <Evaluate>$SOLVER</Evaluate>
+            </Response>
+            <Response varname="r_5">
+              <Label>Mass</Label>
+              <Comment></Comment>
+              <ModelParameter>
+                <Name></Name>
+                <ModelVarname></ModelVarname>
+                <MetaDataList></MetaDataList>
+                <Unit>
+                  <Name></Name>
+                  <Type></Type>
+                </Unit>
+              </ModelParameter>
+              <State>true</State>
+              <Type>Real</Type>
+              <Expression>ds_1[7]</Expression>
+              <Evaluate>$SOLVER</Evaluate>
+            </Response>
+          </ResponseList>
+          <GoalList>
+            <ConstraintBoundaries>Standard</ConstraintBoundaries>
+            <PercentTolerance> 0.5</PercentTolerance>
+            <ToleranceAtZero> 0.005</ToleranceAtZero>
+            <Goal varname="goal_2">
+              <Label>Skin Stress</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Response>r_3</Response>
+              <Type>Constraint</Type>
+              <BoundType>&gt;=</BoundType>
+              <BoundValue> 0</BoundValue>
+              <TypeSpecificValue> 0</TypeSpecificValue>
+            </Goal>
+            <Goal varname="goal_3">
+              <Label>Displacement</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Response>r_1</Response>
+              <Type>Constraint</Type>
+              <BoundType>&gt;=</BoundType>
+              <BoundValue> 0</BoundValue>
+              <TypeSpecificValue> 0</TypeSpecificValue>
+            </Goal>
+            <Goal varname="goal_4">
+              <Label>Core Stress</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Response>r_2</Response>
+              <Type>Constraint</Type>
+              <BoundType>&gt;=</BoundType>
+              <BoundValue> 0</BoundValue>
+              <TypeSpecificValue> 0</TypeSpecificValue>
+            </Goal>
+            <Goal varname="goal_6">
+              <Label>Cost</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Response>r_4</Response>
+              <Type>Constraint</Type>
+              <BoundType>&lt;=</BoundType>
+              <BoundValue> 200</BoundValue>
+              <TypeSpecificValue> 0</TypeSpecificValue>
+            </Goal>
+            <Goal varname="goal_7">
+              <Label>Max Displacement</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Response>r_1</Response>
+              <Type>Minimize</Type>
+              <BoundType>&gt;=</BoundType>
+              <BoundValue> 0</BoundValue>
+              <TypeSpecificValue> 0</TypeSpecificValue>
+            </Goal>
+            <Goal varname="goal_8">
+              <Label>Mass</Label>
+              <Comment></Comment>
+              <State>true</State>
+              <Response>r_5</Response>
+              <Type>Minimize</Type>
+              <BoundType>&gt;=</BoundType>
+              <BoundValue> 0</BoundValue>
+              <TypeSpecificValue> 0</TypeSpecificValue>
+            </Goal>
+          </GoalList>
+          <VariableConstraintList></VariableConstraintList>
+        </Definition>
+        <MatrixList>
+          <Matrix varname="InclusionMatrix">
+            <Label>Inclusion Matrix</Label>
+            <Origin>Internal</Origin>
+            <OriginSettings></OriginSettings>
+            <State>true</State>
+            <Type>Inclusion</Type>
+            <PercentInput> 0</PercentInput>
+          </Matrix>
+        </MatrixList>
+        <MatrixFilterList>
+          <MatrixFilter varname="hstfilter_outliers">
+            <State>false</State>
+          </MatrixFilter>
+          <MatrixFilter varname="hstfilter_duplicates">
+            <State>false</State>
+          </MatrixFilter>
+          <MatrixFilter varname="hstfilter_bad_numbers">
+            <State>true</State>
+          </MatrixFilter>
+          <MatrixFilter varname="hstfilter_excluded">
+            <State>false</State>
+          </MatrixFilter>
+          <MatrixFilter varname="hstfilter_testing_conflict">
+            <State>false</State>
+          </MatrixFilter>
+        </MatrixFilterList>
+        <EvaluationParameterList>
+          <EvaluationParameter varname="Horizontal">
+            <State>true</State>
+            <Value type="boolean">true</Value>
+          </EvaluationParameter>
+          <EvaluationParameter varname="WriteFirst">
+            <State>true</State>
+            <Value type="boolean">false</Value>
+          </EvaluationParameter>
+          <EvaluationParameter varname="MultiRunCount">
+            <State>true</State>
+            <Value type="integer">16</Value>
+          </EvaluationParameter>
+          <EvaluationParameter varname="ShowExternalOutput">
+            <State>true</State>
+            <Value type="boolean">false</Value>
+          </EvaluationParameter>
+          <EvaluationParameter varname="MultiRunExecDelay">
+            <State>true</State>
+            <Value type="integer">250</Value>
+          </EvaluationParameter>
+          <EvaluationParameter varname="PreloadThreshold">
+            <State>true</State>
+            <Value type="integer">1048576</Value>
+          </EvaluationParameter>
+          <EvaluationParameter varname="TaskTimeOut">
+            <State>false</State>
+            <Value type="integer">2592000</Value>
+          </EvaluationParameter>
+        </EvaluationParameterList>
+        <CommandList>
+          <Command varname="cmd_create_design">
+            <StateUI>true</StateUI>
+            <StateBatch>false</StateBatch>
+            <ArgumentList></ArgumentList>
+          </Command>
+          <Command varname="cmd_write_input_deck">
+            <StateUI>true</StateUI>
+            <StateBatch>false</StateBatch>
+            <ArgumentList></ArgumentList>
+          </Command>
+          <Command varname="cmd_exec_analysis">
+            <StateUI>true</StateUI>
+            <StateBatch>false</StateBatch>
+            <ArgumentList></ArgumentList>
+          </Command>
+          <Command varname="cmd_extract_response">
+            <StateUI>true</StateUI>
+            <StateBatch>false</StateBatch>
+            <ArgumentList></ArgumentList>
+          </Command>
+          <Command varname="cmd_purge">
+            <StateUI>true</StateUI>
+            <StateBatch>false</StateBatch>
+            <ArgumentList>
+              <Argument varname="filenames">
+                <Value></Value>
+              </Argument>
+              <Argument varname="foldernames">
+                <Value></Value>
+              </Argument>
+              <Argument varname="onlyOnSuccess">
+                <Value>true</Value>
+              </Argument>
+            </ArgumentList>
+          </Command>
+          <Command varname="cmd_create_report">
+            <StateUI>false</StateUI>
+            <StateBatch>false</StateBatch>
+            <ArgumentList></ArgumentList>
+          </Command>
+        </CommandList>
+        <ReportList>
+          <Report varname="hst_data">
+            <State>false</State>
+          </Report>
+          <Report varname="hst_html">
+            <State>true</State>
+          </Report>
+          <Report varname="hst_hwmvw">
+            <State>false</State>
+          </Report>
+          <Report varname="hst_kstext">
+            <State>false</State>
+          </Report>
+          <Report varname="hst_ksxlsx">
+            <State>false</State>
+          </Report>
+          <Report varname="hst_pythonfit">
+            <State>false</State>
+          </Report>
+          <Report varname="hst_xls">
+            <State>false</State>
+          </Report>
+        </ReportList>
+        <Design type="MOGA">
+          <MAXDES>50</MAXDES>
+          <MINDES>25</MINDES>
+          <CRODIS>0</CRODIS>
+          <GAPOPS>95</GAPOPS>
+          <GATYPE>0</GATYPE>
+          <GADISC>1024</GADISC>
+          <GAMUTR> 0.01</GAMUTR>
+          <GAELIT>10</GAELIT>
+          <GAREPT>1</GAREPT>
+          <GATOUR>2</GATOUR>
+          <GAPMUL> 2</GAPMUL>
+          <GAPPOW> 1</GAPPOW>
+          <GAINDX>5</GAINDX>
+          <IGFAIL>1</IGFAIL>
+          <MAXFAIL>20000</MAXFAIL>
+          <GALOCAL>0</GALOCAL>
+          <INCLUSI>1</INCLUSI>
+        </Design>
+      </Approach>
+    </ApproachList>
+    <CommandList>
+      <Command varname="cmd_create_archive">
+        <StateUI>false</StateUI>
+        <StateBatch>false</StateBatch>
+        <ArgumentList>
+          <Argument varname="archname">
+            <Value></Value>
+          </Argument>
+          <Argument varname="pkgmdlres">
+            <Value>false</Value>
+          </Argument>
+          <Argument varname="pkgrundirs">
+            <Value>false</Value>
+          </Argument>
+          <Argument varname="pkghstds">
+            <Value>false</Value>
+          </Argument>
+        </ArgumentList>
+      </Command>
+    </CommandList>
+  </Study>
+</HyperStudy>

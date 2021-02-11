@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HyperStudyLock>
+  <!--
+    COPYRIGHT (c) 1999-2020 Altair Engineering, Inc. 
+    Email: hstsupport@altair.com
+    Phone: +1 (248) 614-2400
+    http://www.altair.com
+  -->
+  <DocumentProperties>
+    <FileDate>2021-02-11 13:15:07 </FileDate>
+    <Revision>0.0</Revision>
+    <Author></Author>
+    <System>Windows [Version 6.2.9200] (64 bit)</System>
+    <CreatedBy>Altair HyperStudy(TM) v2020.1.0.26.1948507</CreatedBy>
+  </DocumentProperties>
+  <Version>20.0</Version>
+  <BuildNumber>.100.0</BuildNumber>
+  <Revision>
+    <Major>20</Major>
+    <Minor>100</Minor>
+    <Build>26</Build>
+    <SubMinor>20200301</SubMinor>
+    <BuildId>1948507</BuildId>
+  </Revision>
+  <Session>
+    <ProcessId>18924</ProcessId>
+    <Hostname>DESKTOP-G4DBLE12</Hostname>
+    <Username>Sebastian</Username>
+    <Imagename>hst.exe</Imagename>
+  </Session>
+</HyperStudyLock>
